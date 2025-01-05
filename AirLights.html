@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AirLights</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="AirLights.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=MuseoModerno:ital@0;1&family=Poppins&family=Prompt:ital,wght@1,500&family=Quicksand:wght@300;400;500;600&family=Righteous&family=Silkscreen&display=swap" rel="stylesheet">
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=MuseoModerno:ital@0;1&family=Poppins&family=Quicksand:wght@300;400;500;600&family=Righteous&family=Silkscreen&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.typekit.net/oxu5ssx.css">
+
+  
+  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+  
+
+
+</head>
+
+<body>
+
+  <!-- <div class="dropdown">
+    <button class="dropbtn" onclick="toggleDropdown()">
+      <i><img src="images/bars.svg"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="index.html">HOME</a>
+      <a href="index.html">FEAT. WORKS</a>
+      <a href="index.html">PLAYGROUND</a>
+      <a href="index.html">CONNECT</a>
+      
+    </div>
+  </div> -->
+  
+ <!-- <div class="circle"></div> -->
+    
+
+  
+  
+
+
+  
+
+  <div class="content0">
+    <div class="description0">
+      <div class="heading"><h>AIRLIGHTS</h></div>
+      <p>Intuitive armband device that enhances bicyclist safety with hands-free turn signals. Triggers a left turn signal when elbow moves away from the body and a right turn signal when elbow moves toward the body, stopping signaling when elbow is at rest.
+      </p>
+    </div>
+
+      <div class="photos">
+        <img src="images/k1.png" alt="Image 2">
+        <img src="images/stem.jpg" alt="Image 1">
+    </div>
+ 
+  </div>
+
+
+
+  
+
+
+   <!-- <div class="slides">
+      <img src="images/h6.png" alt="Image 2">
+      
+  
+  
+        <img src="images/h7.png" alt="Image 2">
+      
+        <img src="images/h12.png" alt="Image 1">
+      </div>  -->
+  
+  
+  
+  
+
+  
+   
+   
+
+
+  
+      <div class="container">
+        <div class="colum" style="flex-basis: 30%;">
+          <div class="card">
+            <p><u><span class="key">Role</span></u>: lead engineer, programmer, and team manager</p>
+          </div>
+        </div>
+        <div class="colum" style="flex-basis: 30%;">
+            <div class="card">
+              <p><u><span class="key">Skills</span></u>: Prototyping, Design, Coding, Project Management, Arduino</p>
+            </div>
+          </div>
+        <div class="colum" style="flex-basis: 40%;">
+          <div class="card">
+            <p><u><span class="key">Awards</span></u>: State championship sponsored by/from Presbyterian @ NM Governor's STEM Challenge</p>
+          </div>
+        </div>
+      </div>
+  
+
+      <div class="carousel">
+        <div class="heading-column">
+          <div onclick="showDescription(0)" class="active">Problem</div>
+          <div onclick="showDescription(1)">Purpose</div>
+          <div onclick="showDescription(2)">Objective</div>
+        </div>
+        <div class="description-column">
+          <div id="description-0" class="description active">Bicyclists often encounter safety challenges when signaling turns, particularly in low-light conditions. AirLights was initiated based on personal experiences during bike rides on dimly lit streets, where the absence of adequate turn signals posed a significant safety concern. Options such as purchasing and installing separate tail lights or manually signaling turns presented drawbacks and limitations such as cost and multitasking. 
+  
+          </div>
+          <div id="description-1" class="description">The project aims to enhance bicyclist safety during turn signaling, especially in low-light conditions, by designing an intuitive armband device with hands-free turn signals. Its main purpose is to offer a user-friendly signaling solution prioritizing safety in low-light environments. Through automatic turn signal activation based on arm movement, the project aims to eliminate the need for manual signaling, thus reducing accidents and increasing overall cyclist visibility on the road.
+          </div>
+          <div id="description-2" class="description">Our goal is to develop an affordable arm movement tracking device with a production cost not exceeding $40 and an overall project budget of $500. The primary function of this device will be to precisely detect arm movements and activate turn signals accordingly, thereby improving bicyclists' safety. To achieve optimal performance, we intend to create an algorithm that can successfully identify and respond to arm gestures for signaling with a minimum accuracy rate of 80%. This combination of affordability and reliability will ensure our device is both accessible and effective for its intended users.</div>
+        </div>
+      </div>
+      
+      
+      <h1 class="Designprocess">Design Process</h1>
+    <div class="outerr">
+      <div class="header-contentt">
+        <div class="header-textt">
+      
+      
+          <div class="in">
+            <p>
+
+
+              <p><u>Initial Ideas</u>:</p>
+              <ul>
+                <li>A wearable jacket with turn signals: accessories such as a backpack could cover up the signaling mechanism.</li>
+                <li>Turn signal helmet / tail lights on the bike: would lack seamlessness because the user would have to manually press buttons.</li>
+                <li>An armband integrated with turn signals.</li>
+
+
+            </p>
+          </div>
+          <div class="inn">
+            <p><u>Selected Idea</u>:</p>
+            <p>To ensure an intuitive and seamless user experience, I implemented an armband as the primary control interface. This eliminates the need to press any physical buttons, simplifying interaction. Additionally, the armband remains visible and accessible regardless of the user's attire or accessories, and promotes safer usage in low-light environments by eliminating the need to extend one's arm for signaling.</p>
+          
+   
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+    <div class="justifications">
+      <p>When selecting components for the AIRLIGHTS project, our focus centered on simplicity, hands-free operation, and intuitive usage. To ensure seamless interaction, we chose an accelerometer and 
+        gyroscope combination to accurately track the angular velocity of arm movements, automatically triggering the appropriate signal on the RGB matrix. The matrix was designed to wrap around the user's 
+        arm, enabling convenient use on both arms and offering color customization options. This adaptability allows the user to utilize different colors for various situations, such as red for stopping, yellow 
+        for signaling, and other colors to maintain visibility. To control the system, an Arduino was selected for its compatibility and functionality.</div>
+
+      
+
+
+  
+        <div class="outer-container">
+          <div class="image-panel">
+            <div class="image-container">
+              <img src="images/s1.png" alt="Image 1">
+            </div>
+            <div class="image-container">
+              <img src="images/s2.png" alt="Image 2">
+            </div>
+            <div class="image-container">
+              <img src="images/s3.png" alt="Image 3">
+            </div>
+            <div class="image-container">
+              <img src="images/s4.png" alt="Image 4">
+            </div>
+          </div>
+          </div>
+
+
+
+
+
+
+  <div class="top"> <h1>Prototype 1 & 2 </h1> </div>
+  <div class="img-container7">
+    <img src="images/airlightpro.png">
+    <img src="images/airlightpro2.png">
+  </div>
+  </div>
+
+
+  <div class="justifications">
+    <p>
+      After building the initial prototype, which utilized an Arduino Uno and a 
+      half-sized breadboard, it was evident that the device was too large for practical use. 
+      To address this issue, I redesigned the prototype using shorter, compact cables, a mini 
+      breadboard, and an Arduino Nano. These modifications allowed for a more compact and 
+      lightweight design, ensuring that the device could be comfortably worn on the arm, providing 
+      enhanced portability and a streamlined user experience.
+    </p>
+  
+  </div>
+    
+
+
+
+  <div class="c1">
+    <div class="content-box">
+      <div class="image-box">
+        <p><h1>Demo</h1>The main component, accelerometer and gyroscope, tracks the orientation and movement of the user's arm. Based on arm movement and positioning, the appropriate turn signals are triggered on the RGB Matrix. 
+          Both prototypes cost $41.</p>
+      </div>
+      <div class="video-box">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/TAOOiB5Xcsg" frameborder="0" allowfullscreen style="border-radius: 15px;"></iframe>
+      </div>
+      
+     
+    </div>
+    </div>
+    
+   
+  </div>
+  </div>
+
+
+  <div class="c11">
+    <div class="content-box1">
+      <div class="video-box1">
+        <h>Test Results</h>
+        <img src="images/airtest.svg" controls></img>
+      </div>
+      <div class="image-box1">
+        <p>Tests were conducted under both stationary and moving bike conditions to comprehensively 
+          evaluate the prototype's performance. The results indicated that the prototype had a 
+          higher level of accuracy during the stationary test compared to the moving test. This 
+          difference in performance could be due to external factors, such as wind disturbances and noise, 
+          which could have affected arm movements and sensor performance during the moving test.</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+  
+
+
+
+   
+
+
+
+
+
+  
+  <h1 class="Addinfo">Additional Documentation</h1>
+  <div class="outer-container2">
+    <div class="image-panel2">
+      <div class="image-container2">
+        <img src="images/ad3.png" alt="Image 1">
+      </div>
+      <div class="image-container2">
+        <iframe width="400" height="250" src="https://www.youtube.com/embed/0kCkj4nAF9I" frameborder="0" allowfullscreen style="border-radius: 15px;"></iframe>
+      </div>
+      
+      <div class="image-container2">
+        <img src="images/ad1.png" alt="Image 4">
+      </div>
+      <div class="image-container2">
+        <img src="images/ad2.png" alt="Image 2">
+      </div>
+    </div>
+    </div>
+
+
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         <script src="AirLights.js"></script>
+</body>
+</html>

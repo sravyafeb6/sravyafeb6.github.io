@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400&family=Comfortaa:wght@600&family=Cormorant+Infant:ital,wght@1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,700;1,400&family=IBM+Plex+Serif:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@200;400;500;600;700;800;900&family=Metal&family=MuseoModerno:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Prompt:ital,wght@1,500&family=Quicksand:wght@300;400;500;600&family=Raleway:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,700;1,700&family=Rubik:wght@400;500&family=Silkscreen&family=Urbanist&display=swap');
+
+body {
+  background-color: #e8e8e8;
+}
+
+
+
+
+
+
+
+
+/* Drop down button */
+
+
+
+
+.header {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
+  position: sticky;
+  top: 3vw; /* Stick the header to the top of the viewport */
+  z-index: 2; /* Ensure the header is above other content */
+}
+
+
+nav ul {
+  -webkit-font-smoothing: antialiased;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+nav li {
+    /* Remove display: inline-block; */
+    position: relative;
+}
+
+/* Rest of your existing code... */
+
+nav a {
+	color: #383838;
+	display: block;
+	font-family: inter;
+  font-size: 0.8em;
+  padding-left: 25px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+	text-align: left;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+
+
+}
+
+nav a:hover{
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+nav c {
+	color: #444;
+  
+	display: block;
+	font-family: inter;
+  font-size: 0.8em;
+  font-weight: 500;
+	text-align: left;
+  border-bottom: solid #383838 0.1em;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+  transition: border-bottom 0.3s ease; 
+}
+
+nav c:hover{
+  border-bottom: solid transparent 0.1em;
+}
+
+nav d {
+	color: #383838;
+	display: block;
+	font-family: inter;
+  font-size: 0.8em;
+  font-weight: 500;
+  border-bottom: solid #383838 0.1em;
+  
+	text-align: left;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+  transition: border-bottom 0.3s ease; 
+  position: relative;
+  z-index: 3;
+}
+
+
+nav d:hover{
+  border-bottom: solid transparent 0.1em;
+}
+
+
+nav li :first-child a{
+  border-top-left-radius: 1.5em;
+  border-top-right-radius: 1.5em;
+  
+}
+
+nav li:hover a {
+	background: white;
+	color:#383838;
+  text-align: left;
+
+}
+
+nav li:hover b {
+	background: white;
+	color:#383838;
+  text-align: left;
+}
+
+
+
+
+
+
+
+nav li {
+  position: relative; /* Add this line */
+}
+
+nav li ul {
+  float: left;
+  display: block;
+  width: 9em;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+
+  /* Center the sub-menu */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+nav li:hover ul {
+	opacity: 1;
+	top: 30px;
+
+	visibility: visible;
+  position: absolute;
+  z-index: 1;
+
+}
+
+
+nav li ul li {
+	float: none;
+	width: 100%;
+  
+
+}
+
+nav li ul f {
+	background: white;
+  color: #383838;
+
+  padding-left: 25px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 9.2em;
+  font-family: inter;
+  font-size: 0.8em;
+  border-radius: 1.5em;
+  -webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+
+}
+
+nav li ul f:hover {
+  background: #4971F5;
+  color: #FCFAF8;
+  padding-left: 20px;
+}
+
+nav li ul a:hover {
+	background: #4971F5;
+  color: #FCFAF8;
+  
+
+}
+
+nav ul:last-of-type li:last-of-type a {
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}
+
+
+
+
+nav ul:last-of-type li:first-child a {
+  border-bottom-left-radius: 0em;
+  border-bottom-right-radius: 0em;
+}
+
+nav ul li a.instagram-link {
+  border-bottom-left-radius: 0em;
+  border-bottom-right-radius: 0em;
+}
+
+
+
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: #006aff;
+  opacity: 50%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+  transition: transform 2s ease-in-out; /* Added transition */
+}
+
+
+/* Apply 3D hover effect to .role and .name divs */
+.rest, .name {
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+}
+
+
+.rest:hover, .name:hover {
+  transform: scale(1.01);
+  
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 5% auto; /* Center horizontally and add 5% margin from top and bottom */
+
+    background-color: #fff;
+    padding: 2%;
+    padding-right: 4%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+}
+
+
+h1 {
+    text-align: center;
+    color: #383838;
+    font-family: poppins;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+font-family: Be Vietnam Pro;
+text-transform: uppercase;
+font-weight: 400;
+font-size: small;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #383838;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Be Vietnam Pro;
+    transition: 0.2s ease-in-out;
+ 
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

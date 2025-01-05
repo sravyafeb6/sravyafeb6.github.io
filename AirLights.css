@@ -1,0 +1,1773 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400&family=Comfortaa:wght@600&family=IBM+Plex+Mono:wght@700&family=MuseoModerno:ital@0;1&family=Poppins:wght@200;300;400;700&family=Prompt:ital,wght@1,500&family=Quicksand:wght@300;400;500;600&family=Righteous&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,700;1,700&family=Silkscreen&display=swap');
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400&family=Comfortaa:wght@600&family=Cormorant+Infant:ital,wght@1,600;1,700&family=IBM+Plex+Mono:wght@700&family=Inter:wght@200;400;500;600;700;800;900&family=MuseoModerno:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&family=Prompt:ital,wght@1,500&family=Quicksand:wght@300;400;500;600&family=Righteous&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,700;1,700&family=Silkscreen&family=Urbanist&display=swap');
+/* background */
+
+
+body {
+  
+
+
+   /*  background-image: linear-gradient(rgba(151, 154, 213, 0.1) 1px, transparent 1px),
+                      linear-gradient(to right, rgba(151, 154, 213, 0.1) 1px, rgba(229, 234, 245, 0.1) 1px);
+
+  
+  background: -webkit-linear-gradient(to right, #EDE7DA, #C3D3D8);  /* Chrome 10-25, Safari 5.1-6 */
+ /* background: linear-gradient(to right, #e6e4de, #C3D3D8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background-color: linear-gradient(to right, #f2f0ec, #CCD3DE); 
+
+ background-color: #e5eaf4;
+ background-color: #e0e0e0;
+ background-image: radial-gradient(rgba(0, 0, 0, 0.1) 5%, transparent 5%); /* Polka dot pattern */
+ background-size: 30px 30px; /* Size of the polka dots */
+ 
+}
+
+
+
+ /* CSS for the loader page */
+
+/* Drop down button */
+.dropdown {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+}
+
+.dropdown .dropbtn {
+  background-color: transparent;
+  color: #303030;
+  padding: 10px;
+  font-size: 2vw;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown .dropbtn img {
+  width: 35%;
+}
+
+.dropdown .dropbtn .bi-list {
+  stroke-width: 3px; /* Adjust the stroke width as desired */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  border-radius: 15px;
+  z-index: 1;
+  right: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+  transition: opacity 0.3s;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+  animation-name: fade-in;
+  opacity: 1;
+}
+
+.dropdown:not(.open) .dropdown-content {
+  animation-name: fade-out;
+  opacity: 0;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  display: block;
+  padding: 12px 30px;
+  margin-right: 0px;
+  text-align: left;
+  color: #383838;
+  font-weight: 400;
+	font-family: inter;
+  font-size: 0.75em;
+  
+}
+
+.dropdown-content b {
+  text-decoration: none;
+  display: block;
+  padding: 12px 40px;
+  margin-right: 0px;
+  text-align: left;
+font-weight: 400;
+  color: #606060;
+
+	font-family: inter;
+  font-size: 0.75em;
+}
+
+
+.dropdown-content a:first-child:hover {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+
+}
+
+.dropdown-content a:last-child:hover {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:focus,
+.dropdown-content a:visited,
+.dropdown-content a:active {
+  text-decoration: none;
+  color: #444444;
+}
+
+.dropdown-content a:focus {
+  outline: none;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #4971F5;
+  border-radius: 0;
+  color: white;
+}
+
+.dropdown-content b:hover {
+  background-color: #4971F5;
+  border-radius: 0;
+  color: white;
+}
+
+
+
+
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: #6298cb;
+  opacity: 50%;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  transition: transform 2s ease-in-out; /* Added transition */
+}
+
+
+
+
+/* SHWAP heading and desctription */
+
+.content0 {
+  display: flex;
+  align-items: end;
+  flex-grow: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  position: relative;
+  z-index: 1;
+}
+
+
+.description0 {
+  width: 50%;
+  margin-right: 5%;
+
+}
+
+.heading {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 5vw;
+  color: #e3933c;
+  width: 80%;
+  text-shadow: 0 4px 60px rgb(210, 210, 210);
+}
+
+
+.description0 p {
+  font-size: 1vw;
+  color: #444444;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+}
+
+
+.photos{
+  width: 48%;
+  gap: 5%;
+  display: flex;
+  padding-bottom: 1.5%;
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.1);
+
+}
+ 
+
+
+.photos img {
+  width: 47%;
+  border-radius: 1vw;
+  border: white solid 1px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+
+
+.photos img:hover {
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.5);
+  animation-duration: 0.3s;
+}
+
+
+
+
+
+/* preview photos */
+
+.slides {
+  z-index: 1;
+  display: flex;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 3.5%;
+  gap: 3%;
+  justify-content: space-between; /* Change 'space-evenly' to 'space-between' */
+  position: relative;
+  height: 25%; /* Set the height of the image container to 85% */
+
+  /* Optional: If you want the images to wrap to a new line when the container width is not enough */
+  flex-wrap: wrap;
+}
+
+.slides img {
+  object-fit: cover;
+  width: 31%;
+   /* Set the maximum height of the image to 85% of its container */
+  border-radius: 1.1vw;
+  border: solid 1px white;
+  position: relative;
+  box-shadow: 0px 0px 15px rgba(172, 172, 172, 0.2);
+  /* Add the 'aspect-ratio' property to maintain the aspect ratio of the image */
+  aspect-ratio: 31/18; /* You can adjust the aspect ratio as needed */
+}
+
+
+
+
+
+/* image carousel 
+
+ .outer-container {
+  overflow: hidden;
+}
+
+.image-panel {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-auto-rows: auto;
+
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-top: 3%;
+  transition: transform 0.5s ease;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 90%; 
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 1.1vw;
+  border: solid 1px white;
+}
+
+
+.image-container:first-child:hover ~ .image-panel {
+  transform: translateX(15%);  
+}
+
+.image-container:last-child:hover ~ .image-panel {
+  transform: translateX(-15%);
+}
+
+
+.image-container:first-child img,
+.image-container:last-child img {
+  opacity: 0.8; 
+}
+
+.image-container:first-child:hover img,
+.image-container:last-child:hover img {
+  opacity: 1;
+  /* transform: scale(1.05); 
+}
+  
+*/
+
+
+
+/* image carousel */
+
+.outer-container {
+  overflow: hidden;
+}
+
+.image-panel {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-auto-rows: auto;
+  gap: 2%;
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-top: 5%;
+  transition: transform 0.5s ease;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 1.1vw;
+  border: solid 1px white;
+}
+
+
+.image-container:first-child:hover ~ .image-panel {
+  transform: translateX(15%);  
+}
+
+.image-container:last-child:hover ~ .image-panel {
+  transform: translateX(-15%);
+}
+
+
+.image-container:first-child img,
+.image-container:last-child img {
+  opacity: 0.8; 
+}
+
+.image-container:first-child:hover img,
+.image-container:last-child:hover img {
+  opacity: 1;
+  /* transform: scale(1.05); */
+}
+
+/* Role and Achievements cards */
+
+.container {
+  position: relative;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  gap: 2.5%;
+}
+
+.key{
+  font-weight: 500;
+}
+
+.card {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 10px 20px;
+ 
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+
+  transition: box-shadow 0.3s ease-in-out;
+  position: relative;
+  font-size: 0.9vw;
+  color: #252429;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2.2em;
+
+ /* From https://css.glass */
+/* background: rgba(235, 239, 244, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgb(206, 216, 227); */
+
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 4px 200px rgb(207, 215, 217);
+
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1.2px solid rgba(255, 255, 255, 0.38); 
+
+  position: relative;
+	overflow: hidden; 
+}
+
+.card p {
+  margin: 0;
+}
+
+
+
+.card::before {
+	content: "";
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 10%;
+	height: 25%;
+	border-radius: 50%;
+	z-index: 1;
+	top: 35%;
+	left: 45%;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+/*.ripple:hover {
+	background: #74b126;
+	color: #fff;
+}*/
+
+.card:hover::before {
+	-webkit-transform: scale(12);
+	transform: scale(12);
+	-webkit-transition: border-radius .5s .5s,-webkit-transform .5s;
+	transition: border-radius .5s .5s,-webkit-transform .5s;
+	transition: transform .5s,border-radius .5s .5s;
+	transition: transform .5s,border-radius .5s .5s,-webkit-transform .5s;
+}
+
+.card:hover::after {
+	content: "";
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+
+
+
+/* Text toggler/carousel */
+
+.carousel {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+
+.heading-column {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2vw;
+  color: #353535;
+  margin-right: 7%;
+  line-height: 2.5vw;
+
+}
+
+.heading-column > div {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.heading-column > div.active {
+  opacity: 1;
+}
+
+.description-column {
+  display: flex;
+  align-items: center;
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 2.4em;
+  color: #353535;
+
+}
+
+.description-column .description {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.description-column .description.active {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+/* Design process */
+
+.Designprocess{
+  flex-direction: column;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  color: #353535;
+  margin-right: 7%;
+  line-height: 2.5vw;
+  font-size: 1.7vw;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.outerr {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 5%;
+  margin-bottom: 3%;
+}
+
+.header-textt{
+  display: flex;
+  gap: 3%;
+}
+
+.titlee{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  color: #2b2b2b;
+  line-height: 2.5vw;
+  margin-bottom: 5%;
+}
+
+.in{
+  align-items: center;
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 2.4em;
+  color: #444444;
+  width: 60%;
+}
+
+.inn{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 2.4em;
+  color: #444444;
+
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-textt .inn img{
+  width: 100%;
+ 
+  
+
+}
+
+
+
+/* Initial Ideas and Justifications */
+
+.justifications{
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1vw;
+
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2.4em;
+  color: #303030;
+}
+
+
+
+
+  
+
+
+
+
+/* Prototype section */
+
+.top{
+  margin-top: 7%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+
+.top h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  line-height: 10vh;
+  color: #353535;
+  text-align: left;  
+}
+
+.img-container7 {
+  display: flex;
+  margin-bottom: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
+  gap: 5%;
+  justify-content: space-around;
+}
+
+.img-container7 img:first-child {
+  width: 40%;
+  height: auto; 
+  object-fit: contain;
+
+}
+
+.img-container7 img:last-child {
+  width: 43%;
+  height: auto; 
+  object-fit: contain;
+  padding-top: 2%;
+}
+
+
+
+
+/* Demo */
+
+.image-box h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  color: #303535;
+  
+}
+
+.c1 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 1vw;
+
+  font-family: Be Vietnam Pro; 
+  font-weight: 350; 
+  line-height: 3em;
+  color: #303030;
+
+  margin-top: 7%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content-box {
+  display: flex;
+  overflow: hidden;
+}
+
+.image-box {
+  flex: 1;
+  background: none;
+}
+
+.video-box video:hover{
+  animation-duration: 0.3s;
+}
+
+.video-box {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: none;
+}
+
+.video-box video {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  border-radius: 1vw;
+  border: 1px solid white;
+}
+
+
+
+/* Test Results Prototype 1 */
+
+
+.image-box1 {
+width: 65%;
+
+
+}
+ 
+
+.c11 h{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  color: #303535;
+  margin-bottom: 5%;
+
+  
+}
+ 
+
+
+.c11 {
+  font-size: 1vw;
+  font-family: 'Be Vietnam Pro';
+  font-weight: 350;
+  line-height: 3em;
+  color: #303030;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 7%;
+  margin-bottom: 5%;
+
+}
+ 
+
+.content-box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+ 
+
+.video-box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+
+}
+
+
+.video-box1 img {
+  width: 95%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+ /* Future Developments */
+ .titlee2{ /* Heading */
+
+ margin-left: 10%;
+ margin-right: 10%;
+ margin-top: 7%;
+ padding: none;
+ font-family: 'Poppins';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 1.7vw;
+ line-height: 45px;
+ color: #353535
+
+}
+
+
+.header-contentt9{
+  display: flex;
+  gap: 8%;
+}
+
+ .outerr2 { /* Entire box */
+  display: flex;
+  position: relative;
+  margin-left: 10%;
+  align-items: center;
+  margin-right: 10%;
+  gap: 6%;
+  margin-top: 2%;
+}
+
+
+.header-textt2{
+  width: 70%;
+}
+
+.header-textt22{
+  width: 70%;
+}
+
+.in2 { /* Solar power box */
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+
+}
+
+
+.inn2 { /* Insulation box */
+  display: flex;
+  align-items: center;
+  gap: 7%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+}
+
+.in221{ /* Cloud Box */
+  display: flex;
+  align-items: center;
+  gap: 7%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+
+}
+
+.inn22{ /* Platform Box */
+  display: flex;
+  align-items: center;
+  gap: 7%;
+  font-size: 1vw;
+  color: #323232;
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2em;
+  color: #303030;
+}
+
+.in2 svg { /* Battery icon */
+  width: 4%; 
+  padding: 1.15%;
+  height: auto;
+color: rgb(76, 88, 158);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 0.75vw;
+  border: 1.2px solid rgba(255, 255, 255, 1); 
+
+}
+
+
+.in221 svg{ /* Cloud svg */
+  width: 6%; 
+  padding: 1.5%;
+  height: auto;
+  box-shadow: 0px 0px 100px rgba(92, 92, 92, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  
+  color: #71B0CE;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1.2px solid rgba(255, 255, 255, 1); 
+  border-radius: 0.8vw; 
+  
+}
+
+
+.inn2 svg{  /* Insulation icon */
+  width: 3.2%; 
+  padding: 1.7%;
+  height: auto;
+
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 0.8vw; 
+  
+  background: rgba(255, 255, 255, 0.1);
+
+
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1.2px solid rgba(255, 255, 255, 1); 
+  color: #F2B041;
+}
+
+
+.inn22 svg{ /* Platform icon */
+  width: 4%; 
+  padding: 1.5%;
+  height: auto;
+
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 0.8vw; 
+  
+  background: rgba(255, 255, 255, 0.1);
+
+
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  border: 1.2px solid rgba(255, 255, 255, 1); 
+  color: #545454;
+}
+
+
+.in2 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+.in221 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+.inn2 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+.inn22 img:hover{
+  animation-duration: 0.3s;
+  box-shadow: 0px 0px 30px #767676;
+}
+
+
+
+
+/* Additional Information */
+
+.Addinfo{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7vw;
+  color: #303535;
+  margin-top: 7%;
+  margin-left: 12%;
+  margin-right: 12%
+
+}
+
+
+.outer-container2 {
+  overflow: hidden;
+}
+
+.image-panel2 {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-auto-rows: auto;
+  gap: 2%;
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-top: 4%;
+  margin-bottom: 5%;
+  transition: transform 0.4s ease;
+}
+
+.image-container2 {
+  width: 100%;
+}
+
+.image-container2 img {
+  width: 100%; 
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  border-radius: 1vw;
+  border: solid 1px white;
+}
+
+
+.image-container2:first-child:hover ~ .image-panel2 {
+  transform: translateX(15%);  
+}
+
+.image-container2:last-child:hover ~ .image-panel2 {
+  transform: translateX(-15%);
+}
+
+
+.image-container2:first-child img,
+.image-container2:last-child img {
+  opacity: 0.8; 
+}
+
+.image-container2:first-child:hover img,
+.image-container2:last-child:hover img {
+  opacity: 1;
+  /* transform: scale(1.05); */
+}
+  
+
+.image-container2 video {
+  width: 100%; 
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  border-radius: 1.1vw;
+  border: solid 1px white;
+}
+
+.image-container2 video::-webkit-media-controls {
+  display: none;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 767px) {
+
+
+  /* Drop down button */
+.dropdown {
+  display: inline-block;
+  float: right;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.dropdown .dropbtn {
+  background-color: transparent;
+  color: #303030;
+  padding: 10px;
+  font-size: 4vw;
+  border: none;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.dropdown .dropbtn .bi-list {
+  stroke-width: 3px; /* Adjust the stroke width as desired */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  border-radius: 15px;
+  z-index: 1;
+  right: 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+  animation-name: fade-in;
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-content a {
+  color: #323232;
+  text-decoration: none;
+  display: block;
+  padding: 10px 30px;
+  margin-right: 0px;
+  text-align: center;
+  font-family: Quasimoda;
+}
+
+.dropdown-content a:hover {
+  background-color: #95abe5;
+  border-radius: 0;
+}
+
+.dropdown-content a:first-child:hover {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.dropdown-content a:last-child:hover {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.dropdown-content a,
+.dropdown-content a:hover,
+.dropdown-content a:focus,
+.dropdown-content a:visited,
+.dropdown-content a:active {
+  text-decoration: none;
+  color: #323232;
+}
+
+.dropdown-content a:focus {
+  outline: none;
+}
+
+
+/* Alkan-27 heading and desctription */
+
+.content0 {
+
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+.description0{
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
+}
+
+
+.heading {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 13vw;
+  color: #e3933c;
+  width: 80%;
+  text-shadow: 0 4px 60px rgb(210, 210, 210);
+}
+
+
+.description0 p {
+  font-size: 3.3vw;
+  color: #3f3f3f;
+  font-family: Be Vietnam Pro;
+  font-weight: 350; 
+  line-height: 2.4em;
+}
+
+
+.photos{
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 5vh;
+  margin-top: 10%;
+  padding-bottom: 1.5%;
+  box-shadow: 0px 0px 50px rgba(172, 172, 172, 0.1);
+
+}
+ 
+.photos img {
+  width: 100%;
+  border-radius: 3vw;
+  border: white solid 1px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+
+
+
+
+
+/* Role and Achievements cards */
+
+.container {
+
+  display: grid;
+  grid-template-columns: repeat(2, 1); /* change to (2, 1fr) for 2 by 2 grid */
+  gap: 3%;
+  margin-top: 10%;
+
+}
+
+.card {
+  object-fit: cover;
+  width: auto; /* Set width to take up the full space of the grid cell */
+  height: 35%;
+  font-size: 3.3vw;
+  padding: 10%;
+}
+
+.card:nth-child(3) {
+  grid-column: span 2; /* Span across two grid columns */
+}
+
+
+
+
+/* Text toggler/carousel */
+
+.carousel {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 20%;
+  margin-bottom: 5%; 
+}
+
+
+
+.heading-column {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Poppins';
+  width: 100%;
+  justify-content: space-evenly;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4vw;
+  margin-bottom: 5%;
+  color: #353535;
+  margin-right: 7%;
+  line-height: 8vw;
+
+}
+
+.heading-column > div {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.heading-column > div.active {
+  opacity: 1;
+}
+
+.description-column {
+  display: flex;
+  align-items: center;
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.3vw;
+  line-height: 2.4em;
+  color: #353535;
+
+}
+
+.description-column .description {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.description-column .description.active {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/* Design process */
+
+.Designprocess{
+display: flex;
+flex-direction: column;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  color: #353535;
+  margin-right: 7%;
+  line-height: 2.5vw;
+  font-size: 5vw;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15%;
+
+}
+
+.outerr {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 5%;
+  margin-bottom: 3%;
+
+}
+
+.header-textt{
+ display: flex;
+flex-direction: column;
+  gap: 3%;
+}
+
+.titlee{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.3vw;
+  color: #2b2b2b;
+  line-height: 2.4vw;
+  margin-bottom: 5%;
+}
+
+.in{
+  align-items: center;
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.3vw;
+  line-height: 2.4em;
+  color: #444444;
+  width: 100%;
+}
+
+.inn{
+  font-family: 'Be Vietnam Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3.3vw;
+  line-height: 2.4em;
+  color: #444444;
+
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-textt .inn img{
+  width: 100%;
+ 
+  
+
+}
+
+
+
+
+
+
+
+
+
+/* Prototype 1 section */
+
+.top{
+  margin-top: 10%;
+  margin-left: 12%;
+  margin-right: 12%;
+  
+}
+
+
+.top h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5vw;
+  line-height: 10vh;
+  color: #353535;
+  text-align: left;  
+}
+
+.img-container7 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
+  gap: 5%;
+  justify-content: space-around;
+}
+
+.img-container7 img:first-child {
+  width: 90%;
+  height: auto; 
+  object-fit: contain;
+  margin-bottom: 10%;
+  align-self: center;
+;
+
+}
+
+.img-container7 img:last-child {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+  padding-top: 2%;
+  align-self: center;
+}
+
+
+
+
+
+
+/* Demo */
+
+.image-box h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5vw;
+  margin-top: 15%;
+  color: #303535;
+
+}
+
+.c1 {
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 3.3vw;
+  font-family: 'Be Vietnam Pro'; 
+  font-weight: 350; 
+  line-height: 2.4em;
+  color: #303030;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.image-box {
+  flex: 1;
+  background: none;
+}
+
+.video-box {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center; /* Center the video horizontally */
+  background: none;
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 250px;
+  max-width: 100%; /* or any specific max-width */
+
+  border-radius: 1vw;
+  border: 1px solid white;
+}
+
+.video-box iframe:hover {
+  animation-duration: 0.3s;
+}
+
+
+
+.justifications{
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-right: 10%;
+  font-size: 3.3vw;
+
+  font-family: Be Vietnam Pro;
+  font-weight: 300; 
+  line-height: 2.4em;
+  color: #303030;
+}
+
+
+
+ 
+.c11 h{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5vw;
+  color: #303535;
+  margin-bottom: 5%;
+
+  
+}
+ 
+
+
+.c11 {
+  font-size: 3.3vw;
+  font-family: 'Be Vietnam Pro';
+  font-weight: 350;
+  line-height: 2.4em;
+  color: #303030;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 20%;
+  margin-bottom: 5%;
+
+}
+ 
+
+.content-box1 {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+ 
+
+.video-box1 {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+
+}
+
+
+.video-box1 img {
+  width: 95%;
+ 
+  height: auto;
+}
+
+.image-box1 {
+  width: 100%;
+}
+
+
+/* image carousel */
+
+.outer-container {
+  overflow: hidden;
+  gap: 5%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.image-panel {
+
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-auto-rows: auto;
+  gap: 5%;
+  margin-left: -10%;
+  margin-right: -10%;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.image-container {
+  gap: 5%;
+  border-radius: 15px;
+  width: 60%;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%; 
+  gap: 5%;
+  border-radius: 15px;
+  justify-content: center;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 1.1vw;
+  border: solid 1px white;
+}
+
+
+.image-container:first-child:hover ~ .image-panel {
+  transform: translateX(15%);  
+}
+
+.image-container:last-child:hover ~ .image-panel {
+  transform: translateX(-15%);
+}
+
+
+.image-container:first-child img,
+.image-container:last-child img {
+  opacity: 1; 
+}
+
+.image-container:first-child:hover img,
+.image-container:last-child:hover img {
+  opacity: 1;
+  /* transform: scale(1.05); */
+}
+
+
+
+/* Additional Information */
+.Addinfo {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5vw;
+  color: #303535;
+  margin-top: 10%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.outer-container2 {
+  margin-bottom: 10%;
+  margin-top: 5%;
+
+
+}
+
+.image-panel2 {
+  display: flex;
+flex-direction: column;
+  align-items: center;
+}
+
+.image-container2 {
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+.image-container2 img,
+.image-container2 iframe {
+  width: 100%;
+  border-radius: 2vw;
+  border: solid 1px white;
+  display: block;
+}
+
+.image-container2 iframe {
+  height: auto; /* Adjust height if necessary */
+  aspect-ratio: 16/9; /* Maintain aspect ratio */
+}
+
+.image-container2:first-child img,
+.image-container2:last-child img,
+.image-container2:first-child iframe,
+.image-container2:last-child iframe {
+  opacity: 1;
+}
+
+.image-container2:first-child:hover img,
+.image-container2:last-child:hover img,
+.image-container2:first-child:hover iframe,
+.image-container2:last-child:hover iframe {
+  opacity: 1;
+  /* transform: scale(1.05); */
+}
+}
+
+
+
+
+
+
+
+
